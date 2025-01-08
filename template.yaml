@@ -1,39 +1,14 @@
-Type: AWS::S3::Bucket
-Properties:
-  AccelerateConfiguration: 
-    AccelerateConfiguration
-  AccessControl: String
-  AnalyticsConfigurations: 
-    - AnalyticsConfiguration
-  BucketEncryption: 
-    BucketEncryption
-  BucketName: String
-  CorsConfiguration: 
-    CorsConfiguration
-  IntelligentTieringConfigurations: 
-    - IntelligentTieringConfiguration
-  InventoryConfigurations: 
-    - InventoryConfiguration
-  LifecycleConfiguration: 
-    LifecycleConfiguration
-  LoggingConfiguration: 
-    LoggingConfiguration
-  MetricsConfigurations: 
-    - MetricsConfiguration
-  NotificationConfiguration: 
-    NotificationConfiguration
-  ObjectLockConfiguration: 
-    ObjectLockConfiguration
-  ObjectLockEnabled: Boolean
-  OwnershipControls: 
-    OwnershipControls
-  PublicAccessBlockConfiguration: 
-    PublicAccessBlockConfiguration
-  ReplicationConfiguration: 
-    ReplicationConfiguration
-  Tags: 
-    - Tag
-  VersioningConfiguration: 
-    VersioningConfiguration
-  WebsiteConfiguration: 
-    WebsiteConfiguration
+Resources:
+  demo_ec2_instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      AdditionalInfo: String
+      Affinity: String
+      AvailabilityZone: String
+      ImageId: String
+      InstanceType: String
+      KeyName: String
+      SecurityGroupIds: 
+        - String
+      SecurityGroups: 
+        - String
